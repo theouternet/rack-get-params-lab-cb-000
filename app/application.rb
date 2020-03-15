@@ -17,7 +17,7 @@ class Application
       new_item = req.params["item"]
       
       if @@items.include? 
-        
+        @@cart << 
       
     elsif req.path.match(/search/)
       search_term = req.params["q"]
