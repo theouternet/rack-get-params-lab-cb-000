@@ -18,6 +18,7 @@ class Application
       
       if @@items.include? new-item
         @@cart << new_item
+        resp.write "Added #{new_item}"
       else 
       
     elsif req.path.match(/search/)
